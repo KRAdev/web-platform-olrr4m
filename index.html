@@ -1,11 +1,48 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <script src="script.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <link rel="preload" href="./css/style.css" as="style" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>LESSON 9</title>
   </head>
   <body>
-    <h1>Hello there!</h1>
-    <a href="/me.html">My other page</a>
+    <h1>Car list</h1>
+    <div class="container window">
+      <div class="top-bar">search and sort</div>
+      <div class="filter-bar">filter</div>
+      <div class="showcase" id="showcase">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1523983302122-73e869e1f850?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            alt="car"
+            class="card-img"
+            width="1"
+            height="1"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="card-body">
+            <h2>title</h2>
+            <h3>price</h3>
+
+            <ul class="features-list">
+              <li class="list-item"></li>
+              <li class="list-item"></li>
+              <li class="list-item"></li>
+              <li class="list-item"></li>
+            </ul>
+            <div>
+              <span class="vin-code"></span>
+            </div>
+            <a href="tel: phone">Call to {seller name}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/cars.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
